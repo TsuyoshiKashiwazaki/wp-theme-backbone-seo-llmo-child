@@ -1,0 +1,73 @@
+/*
+Theme Name: Backbone SEO LLMO Child
+Template: wp-theme-backbone-seo-llmo-main
+Version: 1.0.0
+Description: Sample child theme for Backbone SEO LLMO theme. Customize freely!
+Author: Tsuyoshi Kashiwazaki
+Author URI: https://www.tsuyoshikashiwazaki.jp/profile/
+Text Domain: backbone-seo-llmo-child
+*/
+
+/**
+ * =============================================================================
+ * 子テーマのカスタムCSS
+ * =============================================================================
+ *
+ * このファイルに独自のCSSを追加できます。
+ * 親テーマのスタイルを上書きしたり、新しいスタイルを追加したりできます。
+ *
+ * 例：
+ */
+
+/* ヘッダーの背景色を変更する例
+body .site-header {
+    background: #2c3e50 !important;
+}
+*/
+
+/* サイトタイトルのフォントサイズを変更する例
+.site-title {
+    font-size: 2rem !important;
+}
+*/
+
+/* リンクの色を変更する例
+a {
+    color: #e74c3c;
+}
+
+a:hover {
+    color: #c0392b;
+}
+*/
+
+/* フッターのスタイルをカスタマイズする例
+.site-footer {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 3rem 0;
+}
+*/
+
+/* カスタムクラスを追加する例
+.custom-box {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+*/
+
+/* レスポンシブデザインの例
+@media (max-width: 767px) {
+    .site-title {
+        font-size: 1.5rem !important;
+    }
+}
+*/
+
+/**
+ * =============================================================================
+ * 以下にあなたのカスタムCSSを記述してください
+ * =============================================================================
+ */
