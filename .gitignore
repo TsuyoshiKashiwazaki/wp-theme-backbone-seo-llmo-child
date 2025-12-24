@@ -54,3 +54,6 @@ build/
 *.min.css
 *.min.js
 *.map
+
+# Temp files
+.temp/

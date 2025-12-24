@@ -15,23 +15,34 @@ if (!defined('ABSPATH')) {
  * IMPORTANT: 子テーマのスタイルは親テーマのスタイルの後に読み込む必要があります
  */
 function backbone_child_enqueue_styles() {
+    // フロントエンドキャッシュバスティング設定を取得
+    $cache_busting_frontend = get_theme_mod('enable_cache_busting_frontend', false);
+
     // 親テーマのスタイル
     wp_enqueue_style(
         'backbone-parent-style',
         get_template_directory_uri() . '/style.css',
         array(),
-        wp_get_theme()->parent()->get('Version')
+        backbone_get_file_version('/style.css', $cache_busting_frontend)
     );
 
     // 子テーマのスタイル（親テーマのスタイルに依存）
     wp_enqueue_style(
         'backbone-child-style',
         get_stylesheet_uri(),
-        array('backbone-parent-style'), // 親テーマのスタイルに依存
-        wp_get_theme()->get('Version')
+        array('backbone-parent-style'),
+        backbone_child_get_file_version('/style.css', $cache_busting_frontend)
     );
 }
 add_action('wp_enqueue_scripts', 'backbone_child_enqueue_styles', 15);
+
+/**
+ * 子テーマの翻訳ファイルを読み込み
+ */
+function backbone_child_load_textdomain() {
+    load_child_theme_textdomain('backbone-seo-llmo-child', get_stylesheet_directory() . '/languages');
+}
+add_action('after_setup_theme', 'backbone_child_load_textdomain');
 
 /**
  * =============================================================================
@@ -260,3 +271,19 @@ cp ../backbone-seo-llmo/header.php ./header.php
  * 以下にあなたのカスタム関数を記述してください
  * =============================================================================
  */
+
+/**
+ * 子テーマ用ファイルバージョン取得ヘルパー関数
+ *
+ * @param string $relative_path 相対パス
+ * @param bool $cache_busting キャッシュバスティング有効フラグ
+ * @return string バージョン文字列
+ */
+function backbone_child_get_file_version($relative_path, $cache_busting) {
+    if ($cache_busting) {
+        return current_time('YmdHis');
+    } else {
+        $full_path = get_stylesheet_directory() . $relative_path;
+        return file_exists($full_path) ? filemtime($full_path) : time();
+    }
+}

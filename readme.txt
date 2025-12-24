@@ -3,7 +3,7 @@ Contributors: tsuyoshikashiwazaki
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,9 @@ Backbone SEO LLMO Childは、Backbone SEO LLMOテーマの公式サンプル子�
 
 == Changelog ==
 
+= 1.0.1 =
+* 翻訳ファイル読み込み機能を追加
+
 = 1.0.0 =
 * 初回リリース
 * 基本的な子テーマ構造
@@ -71,6 +74,9 @@ Backbone SEO LLMO Childは、Backbone SEO LLMOテーマの公式サンプル子�
 * 管理画面マニュアルページ追加
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+翻訳ファイル読み込み機能を追加。
 
 = 1.0.0 =
 初回リリース。親テーマと一緒に使用してください。

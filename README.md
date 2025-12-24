@@ -3,7 +3,7 @@
 ![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue.svg)
 ![PHP](https://img.shields.io/badge/PHP-7.2%2B-purple.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-orange.svg)
 
 ![Backbone SEO LLMO Child Theme Screenshot](screenshot.png)
 
@@ -369,18 +369,7 @@ FTPまたはサーバーのファイルマネージャーで、親テーマの�
 
 ## Changelog
 
-変更履歴の詳細は [CHANGELOG.md](CHANGELOG.md) を参照してください。
-
-### [1.0.0] - 2025-11-10
-
-#### Added
-- Initial release of Backbone SEO LLMO Child theme
-- Basic child theme structure with parent theme dependency
-- Style enqueue functionality for both parent and child themes
-- Admin manual page with comprehensive customization guide
-- Seven commented code examples in functions.php
-- Theme screenshot (screenshot.png)
-- Comprehensive README.md and readme.txt documentation
+変更履歴は [CHANGELOG.md](CHANGELOG.md) を参照してください。
 
 ---
 
@@ -440,5 +429,5 @@ WordPress, Child Theme, Backbone SEO LLMO, Customization, Theme Development, SEO
 
 **Developed by**: Tsuyoshi Kashiwazaki
 **Author URI**: https://www.tsuyoshikashiwazaki.jp/profile/
-**Version**: 1.0.0
-**Last Updated**: 2025-11-10
+**Version**: 1.0.1
+**Last Updated**: 2025-12-25
